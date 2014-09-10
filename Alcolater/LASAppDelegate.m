@@ -7,12 +7,22 @@
 //
 
 #import "LASAppDelegate.h"
+#import "LASViewController.h"
+#import "LASMainMenuViewController.h"
 
 @implementation LASAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] ;
+    
     // Override point for customization after application launch.
+    LASMainMenuViewController *mainMenuViewController = [[LASMainMenuViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainMenuViewController];
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+    [self.window addSubview:navigationController.view];
     return YES;
 }
 							

@@ -13,7 +13,6 @@
 		977DCB8C19BB9E4600C77504 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 977DCB8A19BB9E4600C77504 /* InfoPlist.strings */; };
 		977DCB8E19BB9E4600C77504 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 977DCB8D19BB9E4600C77504 /* main.m */; };
 		977DCB9219BB9E4600C77504 /* LASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 977DCB9119BB9E4600C77504 /* LASAppDelegate.m */; };
-		977DCB9519BB9E4600C77504 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 977DCB9319BB9E4600C77504 /* Main.storyboard */; };
 		977DCB9819BB9E4600C77504 /* LASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 977DCB9719BB9E4600C77504 /* LASViewController.m */; };
 		977DCB9A19BB9E4600C77504 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 977DCB9919BB9E4600C77504 /* Images.xcassets */; };
 		977DCBA119BB9E4700C77504 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977DCBA019BB9E4700C77504 /* XCTest.framework */; };
@@ -21,6 +20,9 @@
 		977DCBA319BB9E4700C77504 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 977DCB8519BB9E4600C77504 /* UIKit.framework */; };
 		977DCBAB19BB9E4700C77504 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 977DCBA919BB9E4700C77504 /* InfoPlist.strings */; };
 		977DCBAD19BB9E4700C77504 /* AlcolaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 977DCBAC19BB9E4700C77504 /* AlcolaterTests.m */; };
+		977DCBBA19BD0DE100C77504 /* Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 977DCBB919BD0DE100C77504 /* Image.png */; };
+		977DCBC019BE4BEA00C77504 /* LASMainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 977DCBBF19BE4BEA00C77504 /* LASMainMenuViewController.m */; };
+		977DCBC619BE5AC300C77504 /* LASWhiskeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 977DCBC519BE5AC300C77504 /* LASWhiskeyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +46,6 @@
 		977DCB8F19BB9E4600C77504 /* Alcolater-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Alcolater-Prefix.pch"; sourceTree = "<group>"; };
 		977DCB9019BB9E4600C77504 /* LASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LASAppDelegate.h; sourceTree = "<group>"; };
 		977DCB9119BB9E4600C77504 /* LASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LASAppDelegate.m; sourceTree = "<group>"; };
-		977DCB9419BB9E4600C77504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		977DCB9619BB9E4600C77504 /* LASViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LASViewController.h; sourceTree = "<group>"; };
 		977DCB9719BB9E4600C77504 /* LASViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LASViewController.m; sourceTree = "<group>"; };
 		977DCB9919BB9E4600C77504 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +54,11 @@
 		977DCBA819BB9E4700C77504 /* AlcolaterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlcolaterTests-Info.plist"; sourceTree = "<group>"; };
 		977DCBAA19BB9E4700C77504 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		977DCBAC19BB9E4700C77504 /* AlcolaterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlcolaterTests.m; sourceTree = "<group>"; };
+		977DCBB919BD0DE100C77504 /* Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Image.png; sourceTree = "<group>"; };
+		977DCBBE19BE4BEA00C77504 /* LASMainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LASMainMenuViewController.h; path = ../LASMainMenuViewController.h; sourceTree = "<group>"; };
+		977DCBBF19BE4BEA00C77504 /* LASMainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LASMainMenuViewController.m; path = ../LASMainMenuViewController.m; sourceTree = "<group>"; };
+		977DCBC419BE5AC300C77504 /* LASWhiskeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LASWhiskeyViewController.h; path = ../LASWhiskeyViewController.h; sourceTree = "<group>"; };
+		977DCBC519BE5AC300C77504 /* LASWhiskeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LASWhiskeyViewController.m; path = ../LASWhiskeyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +120,13 @@
 			children = (
 				977DCB9019BB9E4600C77504 /* LASAppDelegate.h */,
 				977DCB9119BB9E4600C77504 /* LASAppDelegate.m */,
-				977DCB9319BB9E4600C77504 /* Main.storyboard */,
 				977DCB9619BB9E4600C77504 /* LASViewController.h */,
 				977DCB9719BB9E4600C77504 /* LASViewController.m */,
+				977DCBBE19BE4BEA00C77504 /* LASMainMenuViewController.h */,
+				977DCBBF19BE4BEA00C77504 /* LASMainMenuViewController.m */,
+				977DCBC419BE5AC300C77504 /* LASWhiskeyViewController.h */,
+				977DCBC519BE5AC300C77504 /* LASWhiskeyViewController.m */,
+				977DCBB919BD0DE100C77504 /* Image.png */,
 				977DCB9919BB9E4600C77504 /* Images.xcassets */,
 				977DCB8819BB9E4600C77504 /* Supporting Files */,
 			);
@@ -229,9 +239,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				977DCBBA19BD0DE100C77504 /* Image.png in Resources */,
 				977DCB9A19BB9E4600C77504 /* Images.xcassets in Resources */,
 				977DCB8C19BB9E4600C77504 /* InfoPlist.strings in Resources */,
-				977DCB9519BB9E4600C77504 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				977DCBC619BE5AC300C77504 /* LASWhiskeyViewController.m in Sources */,
 				977DCB9819BB9E4600C77504 /* LASViewController.m in Sources */,
 				977DCB8E19BB9E4600C77504 /* main.m in Sources */,
 				977DCB9219BB9E4600C77504 /* LASAppDelegate.m in Sources */,
+				977DCBC019BE4BEA00C77504 /* LASMainMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +293,6 @@
 				977DCB8B19BB9E4600C77504 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		977DCB9319BB9E4600C77504 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				977DCB9419BB9E4600C77504 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		977DCBA919BB9E4700C77504 /* InfoPlist.strings */ = {
@@ -380,7 +384,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Alcolater/Alcolater-Prefix.pch";
 				INFOPLIST_FILE = "Alcolater/Alcolater-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -393,7 +399,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Alcolater/Alcolater-Prefix.pch";
 				INFOPLIST_FILE = "Alcolater/Alcolater-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -457,6 +465,7 @@
 				977DCBB219BB9E4700C77504 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		977DCBB319BB9E4700C77504 /* Build configuration list for PBXNativeTarget "AlcolaterTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +474,7 @@
 				977DCBB519BB9E4700C77504 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
