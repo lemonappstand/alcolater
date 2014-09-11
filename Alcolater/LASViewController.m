@@ -45,6 +45,15 @@
     self.hideKeyboardTapGestureRecognizer = tap;
 }
 
+- (instancetype) init {
+    self = [super init];
+    if (self) {
+        self.title = NSLocalizedString(@"Wine", @"wine");
+        [self.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -18)];
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     // Calls the superclass's implementation
@@ -53,7 +62,6 @@
     // Set our primary view's background color to lightGrayColor
     self.view.backgroundColor = [UIColor lightGrayColor];
     
-    self.title = NSLocalizedString(@"Wine", @"wine");
     
     // Tells the text field that 'self', this is instance of LASViewController should be treated as the text field's delegate
     self.beerPercentTextField.delegate = self;
@@ -150,6 +158,7 @@
 - (void)sliderValueDidChange:(UISlider *)sender {
     NSLog(@"Slider value changed to %f", sender.value);
     self.numberOfBeersLabel.text = [NSString stringWithFormat:@"%.0f", self.beerCountSlider.value];
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
     
     [self.beerPercentTextField resignFirstResponder];
     

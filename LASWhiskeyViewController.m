@@ -14,10 +14,16 @@
 
 @implementation LASWhiskeyViewController
 
+- (instancetype) init {
+    self = [super init];
+    if (self) {
+        self.title = NSLocalizedString(@"Whiskey", @"Whiskey");
+    }
+    return self;
+}
 -(void)viewDidLoad {
     [super viewDidLoad];
-    self.title = NSLocalizedString(@"Whiskey", @"Whiskey");
-    self.view.backgroundColor = [UIColor cyanColor];
+    self.view.backgroundColor = [UIColor colorWithRed:0.992 green:0.992 blue:0.588 alpha:1]; /*#fdfd96*/
 }
 -(void)buttonPressed:(UIButton *)sender;
 {

@@ -8,9 +8,9 @@
 
 #import "LASAppDelegate.h"
 #import "LASViewController.h"
-#import "LASMainMenuViewController.h"
+#import "LASWhiskeyViewController.h"
 
-@implementation LASAppDelegate
+@implementation LASAppDelegate 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -18,16 +18,28 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] ;
     
     // Override point for customization after application launch.
-    LASMainMenuViewController *mainMenuViewController = [[LASMainMenuViewController alloc] init];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainMenuViewController];
-    self.window.rootViewController = navigationController;
+
+    LASViewController *wineVC = [[LASViewController alloc] init];
+    LASWhiskeyViewController *whiskeyVC = [[LASWhiskeyViewController alloc] init];
+    UITabBarController *tabBarVC = [[UITabBarController alloc] init];
+    tabBarVC.viewControllers = @[wineVC, whiskeyVC];
+    tabBarVC.delegate = self;
+    self.window.rootViewController = tabBarVC;
+    
+ 
+   
     [self.window makeKeyAndVisible];
-    [self.window addSubview:navigationController.view];
     return YES;
 }
-							
-- (void)applicationWillResignActive:(UIApplication *)application
-{
+
+-(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    if ([viewController isKindOfClass:[LASWhiskeyViewController class]]) {
+        NSLog(@"New View Controller Selected:Whiskey");
+    } else {
+    NSLog(@"New View Controller Selected:Wine");
+}
+}
+- (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
